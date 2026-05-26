@@ -1,0 +1,21 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-120,-124" rotation="0" hflip="1" vflip="1" label="Uno-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="sketch_may13a.ino.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="Led" CircId="Led-2" mainComp="false" Show_id="false" Show_Val="false" Pos="112,-80" rotation="0" hflip="1" vflip="1" label="Led-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="SerialTerm" CircId="SerialTerm-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-124,-232" rotation="0" hflip="1" vflip="1" label="SerialTerm-4" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Baudrate="9600 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="false" />
+
+<item itemtype="SerialPort" CircId="SerialPort-5" mainComp="false" Show_id="false" Show_Val="false" Pos="28,-172" rotation="0" hflip="1" vflip="1" label="SerialPort-5" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Auto="false" Port="COM6" Baudrate="9600 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="false" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="Led-2-rPin" endpinid="Uno-1-GND1" pointList="128,-80,128,-36,32,-36" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="Led-2-lPin" endpinid="Uno-1-13" pointList="96,-80,96,4,-112,4" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="SerialPort-5-pin0" endpinid="Uno-1-0" pointList="-12,-180,-164,-180,-164,-108,-112,-108" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="SerialPort-5-pin1" endpinid="Uno-1-1" pointList="-12,-164,-140,-164,-140,-100,-112,-100" />
+
+</circuit>
